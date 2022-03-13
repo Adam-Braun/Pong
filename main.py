@@ -45,7 +45,7 @@ class Ball:
 
     
     def draw(self):
-        pygame.draw.circle(self.screen, self.color, (self.x_pos, self.y_pos), self.rad)
+        pygame.draw.circle(self.screen, self.color, (int(self.x_pos), int(self.y_pos)), self.rad)
 
     def move(self):
         self.x_pos += self.x_vel
